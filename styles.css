@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
 }
 
 h1 {
@@ -18,6 +19,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in;
     margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
 }
 
 .hidden {

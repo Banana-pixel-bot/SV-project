@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>    <div class="container">
-        <h1>Hello</h1>
-        <a href="index.html" class="link">點擊這裡</a>
+        <h1 class="hidden">你會按按鈕耶!</h1>
+        <button class="link" onclick="showText()">點擊這裡</button>
     </div>
+    <script>
+        function showText() {
+            document.querySelector('h1').classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>

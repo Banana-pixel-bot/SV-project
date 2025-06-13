@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>電梯監測系統</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>電梯監測系統</h1>
+        <div class="input-section">
+            <div class="input-group">
+                <label for="current-floor">目前所在樓層:</label>
+                <input type="number" id="current-floor" min="1" max="7" placeholder="1-7">
+            </div>
+            <div class="input-group">
+                <label for="next-floor">下一層樓層:</label>
+                <input type="number" id="next-floor" min="1" max="7" placeholder="1-7">
+            </div>
+            <div class="button-group">
+                <button id="submit-btn">接收</button>
+                <button id="clear-btn">清除記錄</button>
+            </div>
+        </div>
+        <div class="record-section">
+            <h2>移動記錄</h2>
+            <div class="stats">
+                <span>總記錄數: <span id="total-count">0</span></span>
+                <span>上樓次數: <span id="up-count">0</span></span>
+                <span>下樓次數: <span id="down-count">0</span></span>
+            </div>
+            <div class="record-list" id="record-list"></div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
